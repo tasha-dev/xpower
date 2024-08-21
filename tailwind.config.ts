@@ -1,12 +1,26 @@
 // Codes by mahdi tasha
 // Importing type of configs of tailwindCSS
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
 
 // Defining configs of tailwindCSS
 const config: Config = {
-  content: [],
-  theme: {},
-  plugins: [],
+    content: [
+        './app/*.{jsx,tsx}',
+        './app/**/*.{jsx,tsx}',
+        './component/*.{jsx,tsx}',
+        './component/**/*.{jsx,tsx}',
+        './component/ui/*.{jsx,tsx}',
+        './component/ui/**/*.{jsx,tsx}',
+    ],
+    theme: {
+        extend: {
+            colors: {
+                "theme": "#6F4EFD",
+                "darkTheme" : "#060B25"
+            }
+        }
+    },
+    plugins: [],
 };
 
 // Exporting the configs as default
