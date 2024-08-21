@@ -6,7 +6,7 @@ import siteConfig from "@/config";
 import {RootLayoutType} from "@/type";
 import {ReactNode} from "react";
 import {cn} from "@/util/cn";
-import '@/style';
+import '@/style/index.css';
 
 // Defining fonts
 const iranYekanFont = localFont({
