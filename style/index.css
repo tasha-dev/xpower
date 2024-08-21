@@ -1,0 +1,10 @@
+/* Codes by mahdi tasha */
+/*Importing tailwindCSS*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Defining some custom styles*/
+@layer base {
+
+}
