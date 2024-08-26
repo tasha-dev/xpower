@@ -78,11 +78,9 @@ export default function RootLayout({children}: RootLayoutType): ReactNode {
                 dir={'rtl'}
             >
                 <Header/>
-                <Container>
-                    <div className={'min-h-screen w-full'}>
-                        {children}
-                    </div>
-                </Container>
+                <div className={'min-h-screen w-full'}>
+                    {children}
+                </div>
             </body>
         </html>
     );

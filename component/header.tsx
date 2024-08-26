@@ -42,8 +42,8 @@ export default function Header(): ReactNode {
     return (
         <>
             <NavMenu items={itemsToRender} isOpened={navMenuState.isOpened} closeFn={navMenuState.close} />
-            <Container className={'w-full absolute top-0 left-[50%] -translate-x-[50%]'}>
-                <header className={'flex items-center gap-5 justify-between lg:mt-[50px] mt-0'}>
+            <Container className={'w-full absolute lg:top-[50px] left-[50%] -translate-x-[50%] z-20'}>
+                <header className={'flex items-center gap-5 justify-between'}>
                     <div className={'flex items-center justify-between gap-[27px]'}>
                         <Logo/>
                         <ul className={'lg:flex hidden items-center justify-between gap-[27px]'}>

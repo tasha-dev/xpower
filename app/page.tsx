@@ -1,13 +1,14 @@
 // Codes by mahdi tasha
 // Importing part
 import {ReactNode} from "react";
+import Hero from "@/section/home/hero";
 
 // Creating and exporting home page as default
-export default function Page():ReactNode {
+export default function HomePage():ReactNode {
     // Returning JSX
     return (
-        <div>
-            <h1>خانه</h1>
-        </div>
+        <>
+            <Hero />
+        </>
     );
 }

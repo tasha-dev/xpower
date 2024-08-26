@@ -7,6 +7,7 @@ const config: Config = {
     content: [
         './app/*.{jsx,tsx}',
         './app/**/*.{jsx,tsx}',
+        './section/**/*.{jsx,tsx}',
         './component/*.{jsx,tsx}',
         './component/**/*.{jsx,tsx}',
         './component/ui/*.{jsx,tsx}',
@@ -16,6 +17,7 @@ const config: Config = {
         extend: {
             colors: {
                 "theme": "#6F4EFD",
+                "themeViolet": "#BDADFF",
                 "lightTheme" : "#423D90",
                 "darkTheme" : "#060B25"
             }
