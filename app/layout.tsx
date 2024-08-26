@@ -50,7 +50,7 @@ const iranYekanFont = localFont({
 });
 
 // Defining metadata
-export const metadata:Metadata = {
+export const metadata: Metadata = {
     title: {
         template: '%s | X.POWER',
         default: siteConfig.name
@@ -69,7 +69,7 @@ export const metadata:Metadata = {
 }
 
 // Creating and exporting root layout component as default
-export default function RootLayout({children}:RootLayoutType):ReactNode {
+export default function RootLayout({children}: RootLayoutType): ReactNode {
     // Returning JSX
     return (
         <html>
@@ -77,8 +77,8 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
                 className={cn('bg-darkTheme', iranYekanFont.className)}
                 dir={'rtl'}
             >
+                <Header/>
                 <Container>
-                    <Header />
                     <div className={'min-h-screen w-full'}>
                         {children}
                     </div>
