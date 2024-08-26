@@ -7,6 +7,8 @@ import {RootLayoutType} from "@/type";
 import {ReactNode} from "react";
 import {cn} from "@/util/cn";
 import '@/style/index.css';
+import Header from "@/component/header";
+import Container from "@/component/ui/container";
 
 // Defining fonts
 const iranYekanFont = localFont({
@@ -71,10 +73,16 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
     // Returning JSX
     return (
         <html>
-            <body className={'bg-darkTheme'}>
-                <div className={cn('min-h-screen w-full', iranYekanFont.className)}>
-                    {children}
-                </div>
+            <body
+                className={cn('bg-darkTheme', iranYekanFont.className)}
+                dir={'rtl'}
+            >
+                <Container>
+                    <Header />
+                    <div className={'min-h-screen w-full'}>
+                        {children}
+                    </div>
+                </Container>
             </body>
         </html>
     );
