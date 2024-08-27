@@ -47,4 +47,5 @@ export interface IconType {
     height?: number;
     fillColor?: string;
     strokeColor?: string;
+    className?: string;
 }

@@ -42,11 +42,11 @@ export default function Header(): ReactNode {
     return (
         <>
             <NavMenu items={itemsToRender} isOpened={navMenuState.isOpened} closeFn={navMenuState.close} />
-            <Container className={'w-full absolute lg:top-[50px] left-[50%] -translate-x-[50%] z-20'}>
+            <Container className={'w-full absolute xl:top-[50px] left-[50%] -translate-x-[50%] z-20'}>
                 <header className={'flex items-center gap-5 justify-between'}>
                     <div className={'flex items-center justify-between gap-[27px]'}>
                         <Logo/>
-                        <ul className={'lg:flex hidden items-center justify-between gap-[27px]'}>
+                        <ul className={'xl:flex hidden items-center justify-between gap-[27px]'}>
                             {
                                 itemsToRender.map((item, index) => (
                                     <HeaderLink key={index} link={item.link}>{item.title}</HeaderLink>
@@ -55,11 +55,11 @@ export default function Header(): ReactNode {
                         </ul>
                     </div>
                     <div className={'flex items-center justify-between gap-3'}>
-                        <Button link={'/auth'} className={'lg:block hidden'}>ورود و ثبت نام</Button>
-                        <Button size={'icon'} link={'/auth'} className={'lg:hidden block'}>
+                        <Button link={'/auth'} className={'xl:block hidden'}>ورود و ثبت نام</Button>
+                        <Button size={'icon'} link={'/auth'} className={'xl:hidden block'}>
                             <User className={'w-7 mx-auto h-full'}/>
                         </Button>
-                        <Button size={'icon'} className={'lg:hidden block'} onClick={() => navMenuState.toggle()}>
+                        <Button size={'icon'} className={'xl:hidden block'} onClick={() => navMenuState.toggle()}>
                             <List className={'w-7 mx-auto h-full'}/>
                         </Button>
                     </div>
