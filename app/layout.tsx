@@ -74,7 +74,7 @@ export default function RootLayout({children}: RootLayoutType): ReactNode {
     return (
         <html>
             <body
-                className={cn('bg-darkTheme', iranYekanFont.className)}
+                className={cn('bg-darkTheme overflow-x-hidden', iranYekanFont.className)}
                 dir={'rtl'}
             >
                 <Header/>
