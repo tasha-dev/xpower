@@ -4,7 +4,7 @@ import {ReactNode} from "react";
 
 // Creating and exporting type of component as default
 export interface RootLayoutType {children: ReactNode;}
-export type IconNameType = 'award' | 'arrow-left';
+export type IconNameType = 'award' | 'arrow-left' | 'plus';
 export type ColoredIconNameType = 'plan' | 'pill' | 'weight' | 'gym-bar';
 export interface HeaderItemsType {
     title: string;
@@ -67,4 +67,11 @@ export interface SectionIntoType {
     children: string;
     title: string;
     className?: string;
+}
+
+export interface ProductType {
+    img: string;
+    title: string;
+    price: number;
+    link: string;
 }
