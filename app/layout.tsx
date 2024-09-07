@@ -9,6 +9,7 @@ import {cn} from "@/util";
 import '@/style/index.css';
 import Header from "@/component/header";
 import Container from "@/component/ui/container";
+import Contact from "@/component/contact";
 
 // Defining fonts
 const iranYekanFont = localFont({
@@ -81,6 +82,7 @@ export default function RootLayout({children}: RootLayoutType): ReactNode {
                 <div className={'min-h-screen w-full'}>
                     {children}
                 </div>
+                <Contact />
             </body>
         </html>
     );

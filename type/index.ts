@@ -4,7 +4,7 @@ import {ReactNode} from "react";
 
 // Creating and exporting type of component as default
 export interface RootLayoutType {children: ReactNode;}
-export type IconNameType = 'award' | 'arrow-left' | 'plus' | 'video' | 'chevron-left' | 'chevron-right' | 'pencil' | 'settings';
+export type IconNameType = 'award' | 'arrow-left' | 'plus' | 'video' | 'chevron-left' | 'chevron-right' | 'pencil' | 'settings' | 'tw' | 'wh' | 'ig' | 'tg';
 export type ColoredIconNameType = 'plan' | 'pill' | 'weight' | 'gym-bar';
 export interface HeaderItemsType {
     title: string;
@@ -101,4 +101,9 @@ export interface BlogType {
     img: string;
     title: string;
     description: string;
+}
+
+export interface MediaLinkType {
+    link: string;
+    icon: 'tw' | 'wh' | 'ig' | 'tg';
 }

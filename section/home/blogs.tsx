@@ -39,10 +39,10 @@ export default function Blogs():ReactNode {
     return (
         <section>
             <Container>
-                <h6 className={'text-white lg:text-center text-right lg:mb-[50px] mb-[20px] font-bold truncate lg:text-[34px] text-[20px]'}>
+                <h6 className={'text-white xl:text-center text-right xl:mb-[50px] mb-[20px] font-bold truncate xl:text-[34px] text-[20px]'}>
                     جدیدترین مقالات
                 </h6>
-                <div className={'grid lg:grid-cols-3 grid-cols-1 lg:gap-[62px] gap-[40px]'}>
+                <div className={'grid xl:grid-cols-3 grid-cols-1 xl:gap-[62px] gap-[40px]'}>
                     {
                         data.map((item, index) => (
                             <Blog
