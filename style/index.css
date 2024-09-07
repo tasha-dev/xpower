@@ -7,6 +7,6 @@
 /*Defining some custom styles*/
 @layer base {
     .btn-primary {@apply bg-theme font-normal text-[20px] leading-[31px] text-center px-[25px] py-[10px] rounded-[5px] text-white;}
-    .btn-transparent {@apply bg-transparent font-normal text-[20px] leading-[31px] text-center text-white;}
+    .btn-transparent {@apply bg-transparent font-normal text-[20px] leading-[31px] text-center px-[25px] py-[10px] text-white;}
     .btn-icon {@apply w-[50px] h-[50px] p-0 flex items-center justify-center aspect-square;}
 }

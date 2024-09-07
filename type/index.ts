@@ -75,3 +75,10 @@ export interface ProductType {
     price: number;
     link: string;
 }
+
+export interface SmallFeatureType {
+    img: string;
+    text: string;
+    className?: string;
+    imgSize?: number;
+}
