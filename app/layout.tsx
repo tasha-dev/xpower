@@ -5,7 +5,7 @@ import {Metadata} from "next";
 import siteConfig from "@/config";
 import {RootLayoutType} from "@/type";
 import {ReactNode} from "react";
-import {cn} from "@/util/cn";
+import {cn} from "@/util";
 import '@/style/index.css';
 import Header from "@/component/header";
 import Container from "@/component/ui/container";

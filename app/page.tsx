@@ -5,6 +5,7 @@ import Hero from "@/section/home/hero";
 import Services from "@/section/home/services";
 import Products from "@/section/home/products";
 import EspecialTrainingProgram from "@/section/home/especialTrainingProgram";
+import TutorialVideo from "@/section/home/tutorialVideo";
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
@@ -15,6 +16,7 @@ export default function HomePage():ReactNode {
             <Services />
             <Products />
             <EspecialTrainingProgram />
+            <TutorialVideo />
         </div>
     );
 }

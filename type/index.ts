@@ -4,7 +4,7 @@ import {ReactNode} from "react";
 
 // Creating and exporting type of component as default
 export interface RootLayoutType {children: ReactNode;}
-export type IconNameType = 'award' | 'arrow-left' | 'plus';
+export type IconNameType = 'award' | 'arrow-left' | 'plus' | 'video' | 'chevron-left' | 'chevron-right' | 'pencil' | 'settings';
 export type ColoredIconNameType = 'plan' | 'pill' | 'weight' | 'gym-bar';
 export interface HeaderItemsType {
     title: string;
@@ -81,4 +81,16 @@ export interface SmallFeatureType {
     text: string;
     className?: string;
     imgSize?: number;
+}
+
+export interface SliderPaginationType {
+    count: number;
+    activeIndex: number;
+    className?: string;
+}
+
+export interface VideoPlayerType {
+    src: string;
+    className?: string;
+    cover: string;
 }

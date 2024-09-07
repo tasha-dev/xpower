@@ -3,7 +3,7 @@
 import {ReactNode} from "react";
 import {ButtonType} from "@/type";
 import Link from "next/link";
-import {cn} from "@/util/cn";
+import {cn} from "@/util";
 
 // Creating and exporting button component as default
 export default function Button({

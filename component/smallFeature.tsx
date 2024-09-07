@@ -2,7 +2,7 @@
 // Importing part
 import {ReactNode} from "react";
 import {SmallFeatureType} from "@/type";
-import {cn} from "@/util/cn";
+import {cn} from "@/util";
 import Image from "next/image";
 
 // Creating and exporting small feature component as default

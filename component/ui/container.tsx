@@ -2,7 +2,7 @@
 // Importing part
 import {ReactNode} from "react";
 import {ContainerType} from "@/type";
-import {cn} from "@/util/cn";
+import {cn} from "@/util";
 
 // Creating and exporting container component as default
 export default function Container({children, size = 'lg', className}:ContainerType):ReactNode {
