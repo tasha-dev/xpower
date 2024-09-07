@@ -7,13 +7,15 @@ import {ReactNode} from "react";
 import SectionInfo from "@/component/ui/sectionInfo";
 import Container from "@/component/ui/container";
 import {Swiper, SwiperSlide} from "swiper/react";
-import 'swiper/css';
+import {Pagination} from 'swiper/modules';
 import Product from "@/component/product";
 import {ProductType} from "@/type";
 import wheyImage from '@/image/home/products/whey.png';
 import wheyUrovitalImage from '@/image/home/products/whey-urovital.png';
 import wheyDelivousImage from '@/image/home/products/delicous-whey.png';
 import gainerImage from '@/image/home/products/gainer.png';
+import 'swiper/css';
+import '@/style/swiperPagination.css';
 
 // Creating and exporting products section of home page as default
 export default function Products():ReactNode {
@@ -91,6 +93,9 @@ export default function Products():ReactNode {
                 <div className={'relative'}>
                     <div className={'absolute top-0 right-0 w-[300px] h-full bg-gradient-to-r from-transparent to-darkTheme pointer-events-none z-[10]'}/>
                     <Swiper
+                        modules={[Pagination]}
+                        pagination={{ clickable: true }}
+                        wrapperClass={'mb-[83px]'}
                         style={{
                             paddingTop: '56px',
                             paddingBottom: '40px',
