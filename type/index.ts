@@ -94,3 +94,11 @@ export interface VideoPlayerType {
     className?: string;
     cover: string;
 }
+
+export interface BlogType {
+    link: string;
+    date: string;
+    img: string;
+    title: string;
+    description: string;
+}
