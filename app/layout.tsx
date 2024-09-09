@@ -8,8 +8,8 @@ import {ReactNode} from "react";
 import {cn} from "@/util";
 import '@/style/index.css';
 import Header from "@/component/header";
-import Container from "@/component/ui/container";
 import Contact from "@/component/contact";
+import Footer from '@/component/footer';
 
 // Defining fonts
 const iranYekanFont = localFont({
@@ -83,6 +83,7 @@ export default function RootLayout({children}: RootLayoutType): ReactNode {
                     {children}
                 </div>
                 <Contact />
+                <Footer />
             </body>
         </html>
     );

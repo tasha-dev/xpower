@@ -107,3 +107,10 @@ export interface MediaLinkType {
     link: string;
     icon: 'tw' | 'wh' | 'ig' | 'tg';
 }
+
+export interface FooterDataItemType {
+    title: string,
+    data: { link: string, text: string }[];
+}
+
+export type FooterDataType = FooterDataItemType[];
