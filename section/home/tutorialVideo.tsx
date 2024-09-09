@@ -13,6 +13,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import * as SwiperTypes from 'swiper/types';
 import 'swiper/css';
 import {Navigation} from 'swiper/modules';
+import {VideoTutorialItemType} from "@/type";
 
 // Creating and exporting tutorial public section as default
 export default function TutorialVideo():ReactNode {
@@ -22,12 +23,7 @@ export default function TutorialVideo():ReactNode {
     const [videoSwiper, setVideoSwiper] = useState<SwiperTypes.Swiper | null>(null);
 
     // Defining dummy data to render
-    const data:{
-        src: string,
-        poster: string,
-        title: string,
-        description: string,
-    }[] = [
+    const data:VideoTutorialItemType[] = [
         {
             poster: BicepImage.src,
             src: '/video/home/tutorialVideo/video.mp4',

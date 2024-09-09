@@ -2,13 +2,13 @@
 // Importing part
 import {ReactNode} from "react";
 import Container from "@/component/ui/container";
-import {FooterDataType} from "@/type";
+import {FooterDataItemType} from "@/type";
 import Link from "next/link";
 
 // Creating and exporting footer component as default
 export default function Footer():ReactNode {
     // Defining data to render
-    const data:FooterDataType = [
+    const data:FooterDataItemType[] = [
         {
             title: 'راهنمای مشتریان',
             data: [

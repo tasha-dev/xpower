@@ -113,4 +113,9 @@ export interface FooterDataItemType {
     data: { link: string, text: string }[];
 }
 
-export type FooterDataType = FooterDataItemType[];
+export interface VideoTutorialItemType {
+    src: string,
+    poster: string,
+    title: string,
+    description: string,
+}
